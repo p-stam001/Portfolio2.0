@@ -103,10 +103,10 @@ export default function LoadingScreen({ onLoadComplete }: { onLoadComplete?: () 
       {/* Terminal-style status messages */}
       <div className="text-sm md:text-xs text-[#333333] space-y-2 mt-4 tracking-wide">
         <p className={`transition-colors duration-300 ${progress > 30 ? 'text-[#555555]' : ''}`}>
-          {progress > 30 ? '>' : '_'} LOADING_ASSETS
+          {progress > 30 ? '>' : '_'} LOADING_WEB3_STACK
         </p>
         <p className={`transition-colors duration-300 ${progress > 60 ? 'text-[#555555]' : ''}`}>
-          {progress > 60 ? '>' : '_'} INIT_COMPONENTS
+          {progress > 60 ? '>' : '_'} INIT_SMART_CONTRACTS
         </p>
         <p className={`transition-colors duration-300 ${progress > 90 ? 'text-[#555555]' : ''}`}>
           {progress > 90 ? '>' : '_'} RENDER_READY

@@ -8,16 +8,16 @@ import { useInView } from '@/hooks/useInView'
 // Current rabbit holes - things I'm exploring/learning
 const rabbitHoles = [
   {
-    topic: 'AGENTIC WORKFLOW',
-    description: 'OPENCLAW + CLAUDE/CODEX SKILLS',
+    topic: 'SMART CONTRACTS',
+    description: 'UPGRADEABLE PROXIES + ACCOUNT ABSTRACTION',
   },
   {
-    topic: 'VIBE DESIGNING',
-    description: 'USING AI TO BUILD DESIGN',
+    topic: 'AI DEV WORKFLOWS',
+    description: 'CURSOR + CLAUDE/CODEX AGENT SKILLS',
   },
   {
-    topic: 'FOUNDER MODE',
-    description: 'BUILDING A SAAS COMPANY (SHILLZ)',
+    topic: 'DEFI + TOKEN DESIGN',
+    description: 'ON-CHAIN LOGIC + TOKENOMICS',
   },
 ]
 
@@ -215,7 +215,7 @@ function MagicBox({ textClassName = '', fill = false }: { textClassName?: string
   }
 
   const sentencePrefix =
-    'I BUILD AT THE INTERSECTION OF CRYPTO, AI, AND CULTURE, SHIPPING PRODUCTS THAT FEEL LIKE'
+    'I BUILD AT THE INTERSECTION OF SMART CONTRACTS, WEB3, AND AI — SHIPPING ON-CHAIN PRODUCTS THAT FEEL LIKE'
   const sentenceSuffix = '.'
   const quoteText =
     'THE KIND OF MAGIC THAT ONLY HAPPENS WHEN SOMEONE OBSESSES OVER THE DETAILS. BECAUSE "IF WE LOSE THE DETAILS, WE LOSE IT ALL." — WALT DISNEY'
@@ -240,7 +240,7 @@ function MagicBox({ textClassName = '', fill = false }: { textClassName?: string
           <div className={textClassName}>
             <p>
               <span className="sr-only">
-                I BUILD AT THE INTERSECTION OF CRYPTO, AI, AND CULTURE, SHIPPING PRODUCTS THAT FEEL LIKE MAGIC.
+                I BUILD AT THE INTERSECTION OF SMART CONTRACTS, WEB3, AND AI — SHIPPING ON-CHAIN PRODUCTS THAT FEEL LIKE MAGIC.
               </span>
               <FallingText text={sentencePrefix} seed={triggerId} letterClassName="magic-letter--out" />{' '}
               <button
@@ -328,10 +328,10 @@ export default function About() {
         {/* Stats */}
         <div className="space-y-2 text-[#666666] uppercase text-sm py-6 border-b border-dashed border-[#222222]">
           <p>_7 YEARS SHIPPING CODE</p>
-          <p>_FRONT END + ON-CHAIN</p>
-          <p>_AI-ENHANCED BUILDER</p>
+          <p>_SMART CONTRACTS + DAPPS</p>
+          <p>_AI-ACCELERATED BUILDER</p>
           <p>
-            _BASED IN <span className="dashed-underline">MIAMI</span>
+            _BASED IN <span className="dashed-underline">HANOI</span>
           </p>
         </div>
 
@@ -376,10 +376,10 @@ export default function About() {
 
           <div className="space-y-2 text-[#666666] uppercase text-base mb-12">
             <p>_7 YEARS SHIPPING CODE</p>
-            <p>_FRONT END + ON-CHAIN</p>
-            <p>_AI-ENHANCED BUILDER</p>
+            <p>_SMART CONTRACTS + DAPPS</p>
+            <p>_AI-ACCELERATED BUILDER</p>
             <p>
-              _BASED IN <span className="dashed-underline">MIAMI</span>
+              _BASED IN <span className="dashed-underline">HANOI</span>
             </p>
           </div>
 

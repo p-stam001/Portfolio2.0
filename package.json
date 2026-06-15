@@ -2,11 +2,16 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "npm run build && wrangler deploy",
+    "preview:cloudflare": "npm run build && wrangler dev"
   },
   "dependencies": {
     "@gsap/react": "^2.1.0",
@@ -27,6 +32,7 @@
     "three": "^0.160.0"
   },
   "devDependencies": {
+    "wrangler": "^4.86.0",
     "@types/node": "^20.0.0",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",

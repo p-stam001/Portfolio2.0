@@ -10,6 +10,16 @@ import { useEffect, useRef, useState } from 'react'
 
 // Annotation labels for images
 const imageAnnotations: Record<string, string[][]> = {
+  'programming-defi-uniswap': [
+    ['UNISWAP SERIES', 'PROGRAMMING DEFI', 'V1 V2 V3'],
+    ['TUTORIALS', 'FROM SCRATCH', 'SOLIDITY'],
+  ],
+  'blockchain-in-go': [
+    ['GO BLOCKCHAIN', 'FROM SCRATCH', '7 PARTS'],
+  ],
+  'defi-security': [
+    ['SECURITY', 'CTF + AUDITS', 'WRITEUPS'],
+  ],
   'shillz': [
     ['LANDING', 'GET PAID TO SHILL', 'CREATOR PLATFORM'],
     ['DASHBOARD', 'ACTIVE SHILLZ', 'LIVE METRICS'],

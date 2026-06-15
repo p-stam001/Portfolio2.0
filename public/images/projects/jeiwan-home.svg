@@ -1,0 +1,17 @@
+<svg width="1700" height="1400" viewBox="0 0 1700 1400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1700" height="1400" fill="#000000"/>
+  <rect x="80" y="80" width="1540" height="1240" stroke="#333333" stroke-width="2" stroke-dasharray="8 8"/>
+  <text x="850" y="280" fill="#FFFFFF" font-family="monospace" font-size="72" font-weight="bold" text-anchor="middle">GOING THE DISTANCE</text>
+  <text x="850" y="360" fill="#888888" font-family="monospace" font-size="28" text-anchor="middle">A BLOG ABOUT BLOCKCHAINS AND SMART CONTRACTS</text>
+  <line x1="200" y1="420" x2="1500" y2="420" stroke="#333333" stroke-width="2" stroke-dasharray="6 6"/>
+  <text x="200" y="500" fill="#BEFE00" font-family="monospace" font-size="24">2023</text>
+  <text x="200" y="560" fill="#666666" font-family="monospace" font-size="22">1. Public Bug Report: Uniswap SwapRouter ETH refund</text>
+  <text x="200" y="660" fill="#BEFE00" font-family="monospace" font-size="24">2022</text>
+  <text x="200" y="720" fill="#666666" font-family="monospace" font-size="22">1. Uniswap V3 Development Book is Out!</text>
+  <text x="200" y="760" fill="#666666" font-family="monospace" font-size="22">2. Programming DeFi: Uniswap V2 (Parts 14)</text>
+  <text x="200" y="800" fill="#666666" font-family="monospace" font-size="22">3. Evaluating DeFi Strategies Using Foundry</text>
+  <text x="200" y="900" fill="#BEFE00" font-family="monospace" font-size="24">2021</text>
+  <text x="200" y="960" fill="#666666" font-family="monospace" font-size="22">1. Programming DeFi: Uniswap (Parts 13)</text>
+  <text x="200" y="1000" fill="#666666" font-family="monospace" font-size="22">2. Upgradeable proxy contract from scratch</text>
+  <text x="200" y="1100" fill="#444444" font-family="monospace" font-size="20">JEIWAN.NET</text>
+</svg>

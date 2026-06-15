@@ -1,12 +1,40 @@
 'use client'
 
 import { useState, useEffect, useRef, useCallback } from 'react'
+import Image from 'next/image'
 import { useIsLoaded } from '@/components/PageWrapper'
 import DecryptedText from '@/components/DecryptedText'
 
-// Custom component for the name that toggles between MR.WZRD and MITCH MALININ
+function HeroAvatar({ isLoaded }: { isLoaded: boolean }) {
+  return (
+    <div
+      className={`relative shrink-0 transition-all duration-700 ${
+        isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+      }`}
+    >
+      <div className="relative w-[120px] h-[120px] sm:w-[140px] sm:h-[140px] md:w-[220px] md:h-[220px] lg:w-[260px] lg:h-[260px] border border-dashed border-[#333333] bg-black p-2 hover:border-[#BEFE00]/60 transition-colors duration-300 group">
+        <div className="absolute -top-px -left-px w-3 h-3 border-l border-t border-[#444444] group-hover:border-[#BEFE00]/50 transition-colors" />
+        <div className="absolute -top-px -right-px w-3 h-3 border-r border-t border-[#444444] group-hover:border-[#BEFE00]/50 transition-colors" />
+        <div className="absolute -bottom-px -left-px w-3 h-3 border-l border-b border-[#444444] group-hover:border-[#BEFE00]/50 transition-colors" />
+        <div className="absolute -bottom-px -right-px w-3 h-3 border-r border-b border-[#444444] group-hover:border-[#BEFE00]/50 transition-colors" />
+        <div className="relative w-full h-full overflow-hidden">
+          <Image
+            src="/images/avatar.png"
+            alt="Profile avatar"
+            fill
+            priority
+            sizes="(max-width: 768px) 140px, 260px"
+            className="object-cover object-center group-hover:scale-[1.02] transition-transform duration-500"
+          />
+        </div>
+      </div>
+    </div>
+  )
+}
+
+// Custom component for the name that toggles between MR.CXDEV and Tran Minh
 function ToggleName({ isLoaded }: { isLoaded: boolean }) {
-  const [displayText, setDisplayText] = useState('MR.WZRD')
+  const [displayText, setDisplayText] = useState('MR.CXDEV')
   const [isToggled, setIsToggled] = useState(false)
   const [isScrambling, setIsScrambling] = useState(false)
   const [hasInitialAnimated, setHasInitialAnimated] = useState(false)
@@ -17,7 +45,7 @@ function ToggleName({ isLoaded }: { isLoaded: boolean }) {
   const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%&*'
   const speed = 40
 
-  const targetText = isToggled ? 'MITCH MALININ' : 'MR.WZRD'
+  const targetText = isToggled ? 'Tran Minh' : 'MR.CXDEV'
 
   // Detect mobile
   useEffect(() => {
@@ -38,11 +66,11 @@ function ToggleName({ isLoaded }: { isLoaded: boolean }) {
       .join('')
   }, [characters])
 
-  // Initial animation on load - decrypt to MR.WZRD
+  // Initial animation on load - decrypt to MR.CXDEV
   useEffect(() => {
     if (!isLoaded || hasInitialAnimated) return
 
-    const target = 'MR.WZRD'
+    const target = 'MR.CXDEV'
     setIsScrambling(true)
     setRevealedIndices(new Set())
 
@@ -130,40 +158,37 @@ function ToggleName({ isLoaded }: { isLoaded: boolean }) {
 
 export default function Hero() {
   const isLoaded = useIsLoaded()
-  const [frontendDecrypted, setFrontendDecrypted] = useState(false)
   const [showStrikethrough, setShowStrikethrough] = useState(false)
-  const [showVibeDev, setShowVibeDev] = useState(false)
+  const [showWeb3Dev, setShowWeb3Dev] = useState(false)
 
-  // Sequence: Frontend decrypts -> strikethrough -> Vibe Dev decrypts
+  // Sequence: Web2 decrypts -> strikethrough -> Web3 Dev decrypts
   useEffect(() => {
     if (!isLoaded) return
 
-    // Frontend DEV finishes decrypting quickly
-    const frontendTimer = setTimeout(() => {
-      setFrontendDecrypted(true)
-    }, 600)
-
-    // Strikethrough animates right after
     const strikeTimer = setTimeout(() => {
       setShowStrikethrough(true)
     }, 800)
 
-    // Vibe Dev starts decrypting immediately after strikethrough
-    const vibeTimer = setTimeout(() => {
-      setShowVibeDev(true)
+    const web3Timer = setTimeout(() => {
+      setShowWeb3Dev(true)
     }, 1100)
 
     return () => {
-      clearTimeout(frontendTimer)
       clearTimeout(strikeTimer)
-      clearTimeout(vibeTimer)
+      clearTimeout(web3Timer)
     }
   }, [isLoaded])
 
   return (
     <section className="min-h-screen flex flex-col justify-start md:justify-center section-padding relative">
-      <div className="max-w-4xl md:mb-24 lg:mb-32">
-        {/* Name - toggles between MR.WZRD and MITCH MALININ on hover */}
+      <div className="w-full max-w-6xl md:mb-24 lg:mb-32">
+        <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-8 md:gap-12 lg:gap-16">
+          <div className="max-w-4xl flex-1">
+            <div className="mb-8 md:hidden">
+              <HeroAvatar isLoaded={isLoaded} />
+            </div>
+
+        {/* Name - toggles between MR.CXDEV and Tran Minh on hover */}
         <h1
           className={`text-6xl sm:text-7xl md:text-7xl lg:text-8xl uppercase tracking-wider mb-6 md:mb-12 hover-glow transition-all duration-700 ${
             isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
@@ -181,7 +206,7 @@ export default function Hero() {
           >
             {isLoaded ? (
               <DecryptedText
-                text="AI ALCHEMIST"
+                text="SMART CONTRACT DEV"
                 speed={50}
                 maxIterations={15}
                 sequential={true}
@@ -192,7 +217,7 @@ export default function Hero() {
                 encryptedClassName="text-[#333333]"
               />
             ) : (
-              'AI ALCHEMIST'
+              'SMART CONTRACT DEV'
             )}
           </p>
           <p
@@ -200,11 +225,11 @@ export default function Hero() {
               isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
             }`}
           >
-            {/* FRONTEND DEV with animated strikethrough */}
+            {/* WEB2 DEV with animated strikethrough */}
             <span className="relative inline-block">
               {isLoaded ? (
                 <DecryptedText
-                  text="FRONTEND DEV"
+                  text="WEB2 DEV"
                   speed={50}
                   maxIterations={15}
                   sequential={true}
@@ -215,7 +240,7 @@ export default function Hero() {
                   encryptedClassName="text-[#333333]"
                 />
               ) : (
-                'FRONTEND DEV'
+                'WEB2 DEV'
               )}
               {/* Animated strikethrough line */}
               <span
@@ -226,11 +251,11 @@ export default function Hero() {
                 }}
               />
             </span>{' '}
-            {/* VIBE DEV - appears after strikethrough */}
+            {/* WEB3 DEV - appears after strikethrough */}
             <span className="text-white">
-              {showVibeDev ? (
+              {showWeb3Dev ? (
                 <DecryptedText
-                  text="VIBE DEV"
+                  text="WEB3 DEV"
                   speed={50}
                   maxIterations={15}
                   sequential={true}
@@ -241,7 +266,7 @@ export default function Hero() {
                   encryptedClassName="text-[#444444]"
                 />
               ) : (
-                <span className="opacity-0">VIBE DEV</span>
+                <span className="opacity-0">WEB3 DEV</span>
               )}
             </span>
           </p>
@@ -253,7 +278,7 @@ export default function Hero() {
             <span className="cursor">
               {isLoaded ? (
                 <DecryptedText
-                  text="HOBBY DESIGNER"
+                  text="AI TOOLS BUILDER"
                   speed={60}
                   maxIterations={25}
                   sequential={true}
@@ -264,7 +289,7 @@ export default function Hero() {
                   encryptedClassName="text-[#333333]"
                 />
               ) : (
-                'HOBBY DESIGNER'
+                'AI TOOLS BUILDER'
               )}
             </span>
           </p>
@@ -278,6 +303,12 @@ export default function Hero() {
         >
           [SCROLL TO EXPLORE]
         </p>
+          </div>
+
+          <div className="hidden md:block md:pt-4 lg:pt-8">
+            <HeroAvatar isLoaded={isLoaded} />
+          </div>
+        </div>
       </div>
 
       {/* Scroll indicator - absolute on desktop only */}

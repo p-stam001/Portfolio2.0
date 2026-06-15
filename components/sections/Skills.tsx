@@ -7,9 +7,13 @@ import {
   SiReact,
   SiNextdotjs,
   SiTypescript,
-  SiTailwindcss,
-  SiNodedotjs,
-  SiFigma,
+  SiSolidity,
+  SiEthereum,
+  SiSolana,
+  SiRust,
+  SiWeb3Dotjs,
+  SiClaude,
+  SiOpenai,
 } from 'react-icons/si'
 import type { IconType } from 'react-icons'
 import { renderToStaticMarkup } from 'react-dom/server'
@@ -100,16 +104,16 @@ const PixelatedIcon = ({
 }
 
 const skills = [
+  { node: <PixelatedIcon icon={SiSolidity} label="Solidity" />, title: 'Solidity' },
+  { node: <PixelatedIcon icon={SiEthereum} label="Ethereum" />, title: 'Ethereum' },
+  { node: <PixelatedIcon icon={SiSolana} label="Solana" />, title: 'Solana' },
+  { node: <PixelatedIcon icon={SiRust} label="Rust" />, title: 'Rust' },
+  { node: <PixelatedIcon icon={SiWeb3Dotjs} label="Web3.js" />, title: 'Web3.js' },
   { node: <PixelatedIcon icon={SiReact} label="React" />, title: 'React' },
   { node: <PixelatedIcon icon={SiNextdotjs} label="Next.js" />, title: 'Next.js' },
   { node: <PixelatedIcon icon={SiTypescript} label="TypeScript" />, title: 'TypeScript' },
-  { node: <PixelatedIcon icon={SiTailwindcss} label="Tailwind" />, title: 'Tailwind' },
-  { node: <PixelatedIcon icon={SiNodedotjs} label="Node.js" />, title: 'Node.js' },
-  { node: <PixelatedIcon icon={SiFigma} label="Figma" />, title: 'Figma' },
-  { node: <PixelatedIcon src="/images/skills/ethereum.svg" label="Ethereum" />, title: 'Ethereum' },
-  { node: <PixelatedIcon src="/images/skills/solana.webp" label="Solana" />, title: 'Solana' },
-  { node: <PixelatedIcon src="/images/skills/claude.png" label="Claude Code" />, title: 'Claude Code' },
-  { node: <PixelatedIcon src="/images/skills/gemini.png" label="Gemini" />, title: 'Gemini' },
+  { node: <PixelatedIcon icon={SiClaude} label="Claude Code" />, title: 'Claude Code' },
+  { node: <PixelatedIcon icon={SiOpenai} label="OpenAI" />, title: 'OpenAI' },
 ]
 
 export default function Skills() {

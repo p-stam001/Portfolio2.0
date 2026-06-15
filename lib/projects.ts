@@ -30,13 +30,118 @@ export interface ProjectImage {
 
 export const projects: Project[] = [
   {
+    id: 'programming-defi-uniswap',
+    title: 'PROGRAMMING DEFI: UNISWAP',
+    subtitle: '_CLONE UNISWAP V1 → V2 FROM SCRATCH',
+    description: [
+      '_SOLIDITY · HARDHAT · FOUNDRY',
+      '_AMM MATH · LP TOKENS · ROUTERS',
+      '_FACTORY · EXCHANGE · TOKEN SWAPS',
+    ],
+    links: [
+      { label: 'READ SERIES', url: 'https://jeiwan.net/posts/programming-defi-uniswap-1/' },
+    ],
+    subProjects: [
+      {
+        name: 'UNISWAP V1',
+        description: 'PARTS 1–3 · EXCHANGE + FACTORY',
+        link: 'https://jeiwan.net/posts/programming-defi-uniswap-1/',
+      },
+      {
+        name: 'UNISWAP V2',
+        description: 'PARTS 1–4 · PAIRS + ROUTING',
+        link: 'https://jeiwan.net/posts/programming-defi-uniswapv2-1/',
+      },
+      {
+        name: 'V3 DEV BOOK',
+        description: 'CONCENTRATED LIQUIDITY DEEP DIVE',
+        link: 'https://jeiwan.net/posts/uniswap-v3-development-book-is-out/',
+      },
+    ],
+    images: [
+      { src: '/images/projects/jeiwan-uniswap.svg', width: 1700, height: 1400 },
+      { src: '/images/projects/jeiwan-home.svg', width: 1700, height: 1400 },
+    ],
+  },
+  {
+    id: 'blockchain-in-go',
+    title: 'BLOCKCHAIN IN GO',
+    subtitle: '_BUILD A CHAIN FROM FIRST PRINCIPLES',
+    description: [
+      '_PROOF-OF-WORK · MEMPOOL · UTXO',
+      '_PERSISTENCE · CLI · P2P NETWORK',
+      '_7-PART HANDS-ON SERIES',
+    ],
+    links: [
+      { label: 'READ SERIES', url: 'https://jeiwan.net/posts/building-blockchain-in-go-part-1/' },
+    ],
+    subProjects: [
+      {
+        name: 'PART 1–3',
+        description: 'PROTOTYPE · POW · PERSISTENCE',
+        link: 'https://jeiwan.net/posts/building-blockchain-in-go-part-1/',
+      },
+      {
+        name: 'PART 4–5',
+        description: 'TRANSACTIONS · ADDRESSES',
+        link: 'https://jeiwan.net/posts/building-blockchain-in-go-part-4/',
+      },
+      {
+        name: 'PART 6–7',
+        description: 'UTXO MODEL · P2P NETWORK',
+        link: 'https://jeiwan.net/posts/building-blockchain-in-go-part-7/',
+      },
+    ],
+    images: [
+      { src: '/images/projects/jeiwan-go.svg', width: 1700, height: 1400 },
+    ],
+  },
+  {
+    id: 'defi-security',
+    title: 'DEFI SECURITY',
+    subtitle: '_AUDITS · CTF · ON-CHAIN ANALYSIS',
+    description: [
+      '_ETHERNAUT + PARADIGM CTF WRITEUPS',
+      '_UPGRADEABLE PROXY PATTERNS',
+      '_FOUNDRY STRATEGY EVALUATION',
+    ],
+    links: [
+      { label: 'READ ARTICLE', url: '/blogs/upgradeable-proxy' },
+    ],
+    subProjects: [
+      {
+        name: 'UPGRADEABLE PROXY',
+        description: 'DELEGATECALL · EIP-1967 · YUL',
+        link: '/blogs/upgradeable-proxy',
+      },
+      {
+        name: 'ETHERNAUT',
+        description: 'TIPS + SOLUTIONS',
+        link: 'https://jeiwan.net/posts/ethernaut-tips-and-solutions/',
+      },
+      {
+        name: 'PARADIGM CTF 2022',
+        description: 'CHALLENGE SOLUTIONS',
+        link: 'https://jeiwan.net/posts/my-paradigm-ctf-2022-solutions/',
+      },
+      {
+        name: 'SWAPROUTER BUG',
+        description: 'PUBLIC UNISWAP BUG REPORT',
+        link: 'https://jeiwan.net/posts/public-bug-report-uniswap-swaprouter/',
+      },
+    ],
+    images: [
+      { src: '/images/projects/jeiwan-security.svg', width: 1700, height: 1400 },
+    ],
+  },
+  {
     id: 'shillz',
     title: 'SHILLZ.APP',
     subtitle: '_TOKEN-BASED COMMUNITY REWARDS',
     description: [
-      '_REAL-TIME ENGAGEMENT ANALYTICS',
-      '_ON-CHAIN REWARD DISTRIBUTION',
-      '_COMPLEX METRIC ALGORITHMS',
+      '_SMART CONTRACT REWARD DISTRIBUTION',
+      '_ON-CHAIN ENGAGEMENT METRICS',
+      '_EVM + SOLANA INTEGRATION',
     ],
     links: [
       { label: 'SHILLZ.APP', url: 'https://www.shillz.app' },
@@ -54,9 +159,9 @@ export const projects: Project[] = [
     title: 'Y2K DOTCOM',
     subtitle: '_CULTURE COIN // NOSTALGIA PROTOCOL',
     description: [
-      '_4,000+ ON-CHAIN HOLDERS',
-      '_COMMUNITY-DRIVEN MEMETICS',
-      '_1 YEAR STRONG',
+      '_TOKEN CONTRACT + 4,000+ HOLDERS',
+      '_ON-CHAIN COMMUNITY TOOLS',
+      '_AI-POWERED MEME GENERATION',
     ],
     links: [
       { label: 'Y2KDOTCOM.XYZ', url: 'https://y2kdotcom.xyz' },
@@ -114,13 +219,13 @@ export const experiments: Experiment[] = [
     id: 'meme-receipts',
     title: 'MEME RECEIPTS',
     description: 'TURN YOUR TRADES INTO SHAREABLE RECEIPTS',
-    tags: ['CRYPTO', 'MEMES', 'VIBES'],
+    tags: ['SMART CONTRACTS', 'WEB3', 'MEMES'],
     link: 'https://meme-receipts.com',
   },
   {
     id: 'coming-soon-1',
     title: 'MORE COMING',
-    description: 'NEW EXPERIMENTS LOADING...',
-    tags: ['SOON', 'TBD'],
+    description: 'NEW WEB3 + AI EXPERIMENTS LOADING...',
+    tags: ['WEB3', 'AI', 'SOON'],
   },
 ]

@@ -5,10 +5,9 @@ import DecryptedText from '@/components/DecryptedText'
 import { useInView } from '@/hooks/useInView'
 
 const contactLinks = [
-  { label: 'EMAIL', value: 'MITCHMALININ@GMAIL.COM', href: 'mailto:mitchmalinin@gmail.com' },
-  { label: 'GITHUB', value: 'GITHUB.COM/MITCHMALININ', href: 'https://github.com/mitchmalinin' },
-  { label: 'LINKEDIN', value: 'LINKEDIN.COM/IN/MITCHMALININ', href: 'https://www.linkedin.com/in/mitchmalinin/' },
-  { label: 'X', value: '@0XMRWZRD', href: 'https://twitter.com/0xmrwzrd' },
+  { label: 'EMAIL', value: 'PATCH.DEMON115@GMAIL.COM', href: 'mailto:patch.demon115@gmail.com' },
+  { label: 'GITHUB', value: 'GITHUB.COM/P-STAM001', href: 'https://github.com/p-stam001' },
+  { label: 'X', value: '@WALLTYEET', href: 'https://x.com/walletyeet' },
 ]
 
 export default function Contact() {
@@ -46,7 +45,7 @@ export default function Contact() {
             )}
           </h2>
           <p className={`text-[#666666] text-lg uppercase mb-16 transition-all duration-700 delay-200 ${isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-            _DOWN TO BUILD SOMETHING COOL? LETS TALK.
+            _BUILDING ON-CHAIN? LET&apos;S TALK.
           </p>
 
           {/* Contact links */}
@@ -74,7 +73,7 @@ export default function Contact() {
         {/* Footer credit */}
         <div className="mt-32 pt-8 border-t border-dashed border-[#222222]">
           <p className="text-[#333333] text-sm uppercase tracking-widest">
-            &copy; 2026 MR.WZRD INC
+            &copy; 2026 MR.CXDEV INC
           </p>
           <p className="text-[#222222] text-sm uppercase tracking-widest mt-2">
             _DESIGNED & BUILT BY YOURS TRULY

@@ -39,25 +39,29 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: '[Mr.Wzrd]',
-  description: 'AI Alchemist, Vibe Dev, Hobby Designer',
+  title: '[MR.CXDEV]',
+  description: 'Smart Contract Dev, Web3 Engineer, AI Tools Builder',
+  icons: {
+    icon: '/images/avatar.png',
+    apple: '/images/avatar.png',
+  },
   openGraph: {
-    title: '[Mr.Wzrd]',
-    description: 'AI Alchemist, Vibe Dev, Hobby Designer',
+    title: '[MR.CXDEV]',
+    description: 'Smart Contract Dev, Web3 Engineer, AI Tools Builder',
     type: 'website',
     images: [
       {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Mr.Wzrd - AI Alchemist, Vibe Dev',
+        alt: 'MR.CXDEV - Smart Contract & Web3 Developer',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: '[Mr.Wzrd]',
-    description: 'AI Alchemist, Vibe Dev, Hobby Designer',
+    title: '[MR.CXDEV]',
+    description: 'Smart Contract Dev, Web3 Engineer, AI Tools Builder',
     images: ['/og-image.png'],
   },
 }

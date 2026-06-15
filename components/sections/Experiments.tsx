@@ -72,7 +72,7 @@ export default function Experiments() {
           )}
         </h2>
         <p className={`text-[#666666] text-base uppercase mb-16 max-w-xl transition-all duration-700 delay-200 ${isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-          _LATE NIGHT BUILDS, WEIRD IDEAS, RANDOM DROPS
+          _SMART CONTRACTS, WEB3 PROTOTYPES, AI-POWERED BUILDS
         </p>
 
         {/* Experiments grid */}

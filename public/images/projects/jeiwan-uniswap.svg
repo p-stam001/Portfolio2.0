@@ -1,0 +1,16 @@
+<svg width="1700" height="1400" viewBox="0 0 1700 1400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1700" height="1400" fill="#000000"/>
+  <rect x="80" y="80" width="1540" height="1240" stroke="#333333" stroke-width="2" stroke-dasharray="8 8"/>
+  <text x="850" y="220" fill="#FFFFFF" font-family="monospace" font-size="52" font-weight="bold" text-anchor="middle">PROGRAMMING DEFI: UNISWAP</text>
+  <text x="850" y="290" fill="#888888" font-family="monospace" font-size="24" text-anchor="middle">FROM FIRST PRINCIPLES TO V2 + V3</text>
+  <rect x="200" y="360" width="1300" height="180" stroke="#333333" stroke-width="2" stroke-dasharray="6 6"/>
+  <text x="240" y="420" fill="#BEFE00" font-family="monospace" font-size="22">PART 1</text>
+  <text x="240" y="470" fill="#666666" font-family="monospace" font-size="20">AMM MATH · POOLS · SWAPS · LIQUIDITY</text>
+  <rect x="200" y="580" width="1300" height="180" stroke="#333333" stroke-width="2" stroke-dasharray="6 6"/>
+  <text x="240" y="640" fill="#BEFE00" font-family="monospace" font-size="22">PART 24</text>
+  <text x="240" y="690" fill="#666666" font-family="monospace" font-size="20">ROUTER · FACTORY · FOUNDRY TESTING · STRATEGIES</text>
+  <rect x="200" y="800" width="1300" height="180" stroke="#BEFE00" stroke-width="2" stroke-dasharray="6 6" fill="#BEFE00" fill-opacity="0.05"/>
+  <text x="240" y="860" fill="#BEFE00" font-family="monospace" font-size="22">UNISWAP V3 DEV BOOK</text>
+  <text x="240" y="910" fill="#888888" font-family="monospace" font-size="20">CONCENTRATED LIQUIDITY · DEEP DIVE</text>
+  <text x="850" y="1120" fill="#444444" font-family="monospace" font-size="18" text-anchor="middle">[ SERIES ]</text>
+</svg>

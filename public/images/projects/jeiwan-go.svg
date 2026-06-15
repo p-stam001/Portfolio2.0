@@ -1,0 +1,22 @@
+<svg width="1700" height="1400" viewBox="0 0 1700 1400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1700" height="1400" fill="#000000"/>
+  <rect x="80" y="80" width="1540" height="1240" stroke="#333333" stroke-width="2" stroke-dasharray="8 8"/>
+  <text x="850" y="220" fill="#FFFFFF" font-family="monospace" font-size="52" font-weight="bold" text-anchor="middle">BUILDING BLOCKCHAIN IN GO</text>
+  <text x="850" y="290" fill="#888888" font-family="monospace" font-size="24" text-anchor="middle">7-PART SERIES · FROM PROTOTYPE TO NETWORK</text>
+  <text x="200" y="400" fill="#666666" font-family="monospace" font-size="22">_01 BASIC PROTOTYPE</text>
+  <text x="200" y="460" fill="#666666" font-family="monospace" font-size="22">_02 PROOF-OF-WORK</text>
+  <text x="200" y="520" fill="#666666" font-family="monospace" font-size="22">_03 PERSISTENCE + CLI</text>
+  <text x="200" y="580" fill="#666666" font-family="monospace" font-size="22">_04 TRANSACTIONS 1</text>
+  <text x="200" y="640" fill="#666666" font-family="monospace" font-size="22">_05 ADDRESSES</text>
+  <text x="200" y="700" fill="#666666" font-family="monospace" font-size="22">_06 TRANSACTIONS 2</text>
+  <text x="200" y="760" fill="#BEFE00" font-family="monospace" font-size="22">_07 NETWORK</text>
+  <rect x="900" y="380" width="620" height="420" stroke="#333333" stroke-width="2" stroke-dasharray="6 6"/>
+  <text x="940" y="440" fill="#444444" font-family="monospace" font-size="18">// block.go</text>
+  <text x="940" y="490" fill="#888888" font-family="monospace" font-size="18">type Block struct {</text>
+  <text x="960" y="530" fill="#666666" font-family="monospace" font-size="18">Timestamp int64</text>
+  <text x="960" y="570" fill="#666666" font-family="monospace" font-size="18">PrevHash  []byte</text>
+  <text x="960" y="610" fill="#666666" font-family="monospace" font-size="18">Hash      []byte</text>
+  <text x="960" y="650" fill="#BEFE00" font-family="monospace" font-size="18">Nonce     int</text>
+  <text x="940" y="690" fill="#888888" font-family="monospace" font-size="18">}</text>
+  <text x="850" y="1120" fill="#444444" font-family="monospace" font-size="18" text-anchor="middle">[ FROM SCRATCH ]</text>
+</svg>

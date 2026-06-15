@@ -1,0 +1,18 @@
+<svg width="1700" height="1400" viewBox="0 0 1700 1400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1700" height="1400" fill="#000000"/>
+  <rect x="80" y="80" width="1540" height="1240" stroke="#333333" stroke-width="2" stroke-dasharray="8 8"/>
+  <text x="850" y="220" fill="#FFFFFF" font-family="monospace" font-size="48" font-weight="bold" text-anchor="middle">SECURITY + RESEARCH</text>
+  <text x="850" y="290" fill="#888888" font-family="monospace" font-size="24" text-anchor="middle">AUDITS · CTF · ON-CHAIN ANALYSIS</text>
+  <rect x="200" y="360" width="600" height="200" stroke="#333333" stroke-width="2" stroke-dasharray="6 6"/>
+  <text x="240" y="420" fill="#BEFE00" font-family="monospace" font-size="20">ETHERNAUT</text>
+  <text x="240" y="470" fill="#666666" font-family="monospace" font-size="18">TIPS + SOLUTIONS</text>
+  <rect x="900" y="360" width="600" height="200" stroke="#333333" stroke-width="2" stroke-dasharray="6 6"/>
+  <text x="940" y="420" fill="#BEFE00" font-family="monospace" font-size="20">PARADIGM CTF</text>
+  <text x="940" y="470" fill="#666666" font-family="monospace" font-size="18">2022 SOLUTIONS</text>
+  <rect x="200" y="620" width="1300" height="200" stroke="#BEFE00" stroke-width="2" stroke-dasharray="6 6" fill="#BEFE00" fill-opacity="0.05"/>
+  <text x="240" y="680" fill="#BEFE00" font-family="monospace" font-size="20">BUG REPORT: UNISWAP SWAPROUTER</text>
+  <text x="240" y="730" fill="#888888" font-family="monospace" font-size="18">UNSPENT ETH NOT REFUNDED IN PARTIAL SWAPS</text>
+  <rect x="200" y="880" width="1300" height="160" stroke="#333333" stroke-width="2" stroke-dasharray="6 6"/>
+  <text x="240" y="940" fill="#666666" font-family="monospace" font-size="18">SCAM ANALYSIS · TITAN FALL · BITCOIN NETWORK SERIES</text>
+  <text x="850" y="1120" fill="#444444" font-family="monospace" font-size="18" text-anchor="middle">[ WRITEUPS ]</text>
+</svg>
