@@ -30,108 +30,44 @@ export interface ProjectImage {
 
 export const projects: Project[] = [
   {
-    id: 'programming-defi-uniswap',
-    title: 'PROGRAMMING DEFI: UNISWAP',
-    subtitle: '_CLONE UNISWAP V1 → V2 FROM SCRATCH',
+    id: 'ethioswap',
+    title: 'ETHIOSWAP',
+    subtitle: '_P2P ESCROW // USDT ↔ ETB FOR ETHIOPIA',
     description: [
-      '_SOLIDITY · HARDHAT · FOUNDRY',
-      '_AMM MATH · LP TOKENS · ROUTERS',
-      '_FACTORY · EXCHANGE · TOKEN SWAPS',
+      '_REACT · SUPABASE · CONVEX · ETHERS.JS',
+      '_ESCROW LOCKS CRYPTO UNTIL PAYMENT CONFIRMED',
+      '_REAL-TIME TRADES · WALLET · KYC · ADMIN PANEL',
+      '_TELEGRAM + SMS + EMAIL NOTIFICATIONS',
     ],
     links: [
-      { label: 'READ SERIES', url: 'https://jeiwan.net/posts/programming-defi-uniswap-1/' },
+      { label: 'ETHIOSWAP', url: 'https://ethioswap.qzz.io' },
     ],
     subProjects: [
       {
-        name: 'UNISWAP V1',
-        description: 'PARTS 1–3 · EXCHANGE + FACTORY',
-        link: 'https://jeiwan.net/posts/programming-defi-uniswap-1/',
+        name: 'TRADE ROOM',
+        description: 'REAL-TIME CHAT + ESCROW FLOW',
       },
       {
-        name: 'UNISWAP V2',
-        description: 'PARTS 1–4 · PAIRS + ROUTING',
-        link: 'https://jeiwan.net/posts/programming-defi-uniswapv2-1/',
+        name: 'WALLET',
+        description: 'MULTI-CHAIN DEPOSITS + WITHDRAWALS',
       },
       {
-        name: 'V3 DEV BOOK',
-        description: 'CONCENTRATED LIQUIDITY DEEP DIVE',
-        link: 'https://jeiwan.net/posts/uniswap-v3-development-book-is-out/',
+        name: 'KYC',
+        description: 'ID VERIFICATION + STATUS TRACKING',
+      },
+      {
+        name: 'ADMIN PANEL',
+        description: 'USERS · DISPUTES · COMMISSION SETTINGS',
+      },
+      {
+        name: 'NOTIFICATIONS',
+        description: 'TELEGRAM · SMS · EMAIL PIPELINE',
       },
     ],
     images: [
-      { src: '/images/projects/jeiwan-uniswap.svg', width: 1700, height: 1400 },
-      { src: '/images/projects/jeiwan-home.svg', width: 1700, height: 1400 },
-    ],
-  },
-  {
-    id: 'blockchain-in-go',
-    title: 'BLOCKCHAIN IN GO',
-    subtitle: '_BUILD A CHAIN FROM FIRST PRINCIPLES',
-    description: [
-      '_PROOF-OF-WORK · MEMPOOL · UTXO',
-      '_PERSISTENCE · CLI · P2P NETWORK',
-      '_7-PART HANDS-ON SERIES',
-    ],
-    links: [
-      { label: 'READ SERIES', url: 'https://jeiwan.net/posts/building-blockchain-in-go-part-1/' },
-    ],
-    subProjects: [
-      {
-        name: 'PART 1–3',
-        description: 'PROTOTYPE · POW · PERSISTENCE',
-        link: 'https://jeiwan.net/posts/building-blockchain-in-go-part-1/',
-      },
-      {
-        name: 'PART 4–5',
-        description: 'TRANSACTIONS · ADDRESSES',
-        link: 'https://jeiwan.net/posts/building-blockchain-in-go-part-4/',
-      },
-      {
-        name: 'PART 6–7',
-        description: 'UTXO MODEL · P2P NETWORK',
-        link: 'https://jeiwan.net/posts/building-blockchain-in-go-part-7/',
-      },
-    ],
-    images: [
-      { src: '/images/projects/jeiwan-go.svg', width: 1700, height: 1400 },
-    ],
-  },
-  {
-    id: 'defi-security',
-    title: 'DEFI SECURITY',
-    subtitle: '_AUDITS · CTF · ON-CHAIN ANALYSIS',
-    description: [
-      '_ETHERNAUT + PARADIGM CTF WRITEUPS',
-      '_UPGRADEABLE PROXY PATTERNS',
-      '_FOUNDRY STRATEGY EVALUATION',
-    ],
-    links: [
-      { label: 'READ ARTICLE', url: '/blogs/upgradeable-proxy' },
-    ],
-    subProjects: [
-      {
-        name: 'UPGRADEABLE PROXY',
-        description: 'DELEGATECALL · EIP-1967 · YUL',
-        link: '/blogs/upgradeable-proxy',
-      },
-      {
-        name: 'ETHERNAUT',
-        description: 'TIPS + SOLUTIONS',
-        link: 'https://jeiwan.net/posts/ethernaut-tips-and-solutions/',
-      },
-      {
-        name: 'PARADIGM CTF 2022',
-        description: 'CHALLENGE SOLUTIONS',
-        link: 'https://jeiwan.net/posts/my-paradigm-ctf-2022-solutions/',
-      },
-      {
-        name: 'SWAPROUTER BUG',
-        description: 'PUBLIC UNISWAP BUG REPORT',
-        link: 'https://jeiwan.net/posts/public-bug-report-uniswap-swaprouter/',
-      },
-    ],
-    images: [
-      { src: '/images/projects/jeiwan-security.svg', width: 1700, height: 1400 },
+      { src: '/images/projects/ethioswap-landing.png', width: 1024, height: 506 },
+      { src: '/images/projects/ethioswap-wallet.png', width: 1024, height: 503 },
+      { src: '/images/projects/ethioswap-settings.png', width: 1024, height: 535 },
     ],
   },
   {

@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { useRef } from 'react'
 import DecryptedText from '@/components/DecryptedText'
 import { useInView } from '@/hooks/useInView'
-import { blogs } from '@/lib/blogs'
+import { articles, articlesArchiveUrl } from '@/lib/articles'
 
 const blogIcon = (
   <svg viewBox="0 0 16 16" className="h-10 w-10 text-[#BEFE00]" aria-hidden="true">
@@ -15,7 +15,7 @@ const blogIcon = (
   </svg>
 )
 
-const featuredBlogs = blogs.slice(0, 3)
+const featuredArticles = articles.slice(0, 3)
 
 export default function Articles() {
   const sectionRef = useRef<HTMLElement>(null)
@@ -49,10 +49,12 @@ export default function Articles() {
         </p>
 
         <div className={`space-y-4 transition-all duration-700 delay-300 ${isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-          {featuredBlogs.map((blog, index) => (
+          {featuredArticles.map((article, index) => (
             <Link
-              key={blog.slug}
-              href={`/blogs/${blog.slug}`}
+              key={article.id}
+              href={article.url}
+              target="_blank"
+              rel="noopener noreferrer"
               className="relative block bg-black border border-dashed border-[#333333] p-6 md:p-8 hover:border-[#555555] transition-colors group"
             >
               <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
@@ -66,14 +68,13 @@ export default function Articles() {
                         _{String(index + 1).padStart(2, '0')}
                       </span>
                       <span className="text-[#444444] text-xs border border-[#333333] px-2 py-0.5">
-                        BLOG
+                        {article.source}
                       </span>
-                      <span className="text-[#333333] text-xs">{blog.year}</span>
+                      <span className="text-[#333333] text-xs">{article.year}</span>
                     </div>
                     <h3 className="text-xl md:text-2xl uppercase mb-3 group-hover:text-[#BEFE00] transition-colors">
-                      {blog.title}
+                      {article.title}
                     </h3>
-                    <p className="text-[#666666] text-xs uppercase">{blog.excerpt}</p>
                   </div>
                 </div>
               </div>
@@ -85,8 +86,13 @@ export default function Articles() {
         </div>
 
         <div className={`mt-8 text-center transition-all duration-700 delay-[400ms] ${isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-          <Link href="/blogs" className="bracket-link text-base uppercase">
-            [VIEW ALL BLOGS]
+          <Link
+            href={articlesArchiveUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bracket-link text-base uppercase"
+          >
+            [VIEW ALL ARTICLES]
           </Link>
         </div>
       </div>
