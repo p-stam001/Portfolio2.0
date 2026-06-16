@@ -7,7 +7,7 @@ import { useInView } from '@/hooks/useInView'
 const contactLinks = [
   { label: 'EMAIL', value: 'PATCH.DEMON115@GMAIL.COM', href: 'mailto:patch.demon115@gmail.com' },
   { label: 'GITHUB', value: 'GITHUB.COM/P-STAM001', href: 'https://github.com/p-stam001' },
-  { label: 'X', value: '@WALLTYEET', href: 'https://x.com/walletyeet' },
+  { label: 'X', value: '@CXDEV115', href: 'https://x.com/cxdev115' },
 ]
 
 export default function Contact() {
